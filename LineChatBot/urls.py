@@ -19,6 +19,6 @@ from django.urls import re_path as url
 from LineChatBot import views # Add this line
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     url(r'^callback', views.callback) # Add this line
 ]
