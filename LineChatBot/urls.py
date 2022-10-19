@@ -20,5 +20,5 @@ from LineChatBot import views # Add this line
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^callback', views.callback) # Add this line
+    url('callback', views.callback) # Add this line
 ]
