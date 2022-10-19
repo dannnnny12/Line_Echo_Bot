@@ -14,11 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.conf.urls import url # Add this line
+from django.urls import path, include
+from django.urls import re_path as url
 from LineChatBot import views # Add this line
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url('admin/', admin.site.urls),
     url(r'^callback', views.callback) # Add this line
 ]
