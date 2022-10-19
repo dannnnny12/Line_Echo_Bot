@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.urls import re_path as url
-from . import views # Add this line
+from myapp  import views # Add this line
 from django.urls import path, re_path
 urlpatterns = [
     re_path('LineChatBot/', admin.site.urls),
