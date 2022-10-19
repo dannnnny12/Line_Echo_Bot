@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url # Add this line
+from LineChatBot import views # Add this line
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^callback', views.callback) # Add this line
 ]
