@@ -1,1 +1,1 @@
-web: gunicorn LineChatBot.wsgi'
+web: gunicorn LineChatBot.wsgi --log-file -
