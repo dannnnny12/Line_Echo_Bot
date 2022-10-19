@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.urls import re_path as url
 from LineChatBot import views # Add this line
-
+from django.urls import path, re_path
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    url('callback', views.callback) # Add this line
+    re_path('admin/', admin.site.urls),
+    re_path(r'^callback', views.callback) # Add this line
 ]
