@@ -6,4 +6,4 @@ This Chatbot is deployed on Heroku and using Django frame.
 Try it yourself:
 
 ![695hdjnv](https://user-images.githubusercontent.com/49478754/196616819-904cec84-a1e2-459d-93d8-d39de282f614.png)
- 
+  
